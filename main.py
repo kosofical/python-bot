@@ -3,16 +3,16 @@ import json
 import telebot
 
 ##TOKEN DETAILS
-TOKEN = "TRON"
+TOKEN = "7897473963:AAGapmSZ7M75BDVaFxrivAhA_5_Li3k5PKM"
 
-BOT_TOKEN = "5710284858:AAHcIDYAtWAC01p8BsHRl4cIwhcKpBqNlTQ"
-PAYMENT_CHANNEL = "@testpostchnl" #add payment channel here including the '@' sign
-OWNER_ID = 5151868182 #write owner's user id here.. get it from @MissRose_Bot by /id
-CHANNELS = ["@testpostchnl"] #add channels to be checked here in the format - ["Channel 1", "Channel 2"] 
+BOT_TOKEN = "7897473963:AAGapmSZ7M75BDVaFxrivAhA_5_Li3k5PKM"
+PAYMENT_CHANNEL = "@empireek" #add payment channel here including the '@' sign
+OWNER_ID = 6574808717 #write owner's user id here.. get it from @MissRose_Bot by /id
+CHANNELS = ["@empireek"] #add channels to be checked here in the format - ["@k_by_us", "@Theme_by_eaintymm"] 
               #you can add as many channels here and also add the '@' sign before channel username
-Daily_bonus = 1 #Put daily bonus amount here!
-Mini_Withdraw = 0.5  #remove 0 and add the minimum withdraw u want to set
-Per_Refer = 0.0001 #add per refer bonus here
+Daily_bonus = 20 #Put daily bonus amount here!
+Mini_Withdraw = 2000  #remove 0 and add the minimum withdraw u want to set
+Per_Refer = 30 #add per refer bonus here
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -24,7 +24,7 @@ def check(id):
         else:
             return False
     return True
-bonus = {}
+bonus = {50}
 
 def menu(id):
     keyboard = telebot.types.ReplyKeyboardMarkup(True)
